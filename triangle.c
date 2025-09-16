@@ -2,12 +2,8 @@
 int main()
 { 
     int a,b,c,output;
-    printf("enter side a of triangle:");
-    scanf("%d",&a);
-    printf("enter side b of triangle:");
-    scanf("%d",&b);
-    printf("enter side c of triangle:");
-    scanf("%d",&c);
+    printf("enter side a,b,c of a triangle:");
+    scanf("%d %d %d",&a, &b, &c);
     if (a+b>c && b+c>a && a+c>b && a>0 && b>0 && c>0)
     {
         printf("triangle is valid\n");

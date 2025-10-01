@@ -17,7 +17,7 @@ int main()
 		}
 		temp /= 10;
 	}
-	if (has_odd)
+	if (has_odd==1)
 		printf("Product of odd digits of %d is %d\n", n, product);
 	else
 		printf("No odd digits found in %d\n", n);

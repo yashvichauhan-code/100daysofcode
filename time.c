@@ -10,4 +10,4 @@ int main()
     printf("%d :%d :%d", hour, min , sec);
     return 0;
 }
-//fix
+//fixed

@@ -12,3 +12,4 @@ int main()
     printf("factorial of %d is %d" , n, fact);
     return 0;
 }
+//fix

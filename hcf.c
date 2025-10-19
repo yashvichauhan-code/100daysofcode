@@ -14,3 +14,4 @@ int main()
     printf("hcf of %d and %d is %d\n", a, b, x);
     return 0;
 }
+//fix

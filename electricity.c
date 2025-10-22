@@ -14,3 +14,4 @@ int main()
         printf("bill: ₹%d",100 * 5 + 100 * 7 + 100 * 10 + (u - 300) * 12);
     return 0;
 }
+//fix

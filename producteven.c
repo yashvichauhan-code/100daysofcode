@@ -15,3 +15,4 @@ int main()
     printf("product of even numbers is %d", p);
     return 0;
 }
+//fix

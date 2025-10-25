@@ -19,3 +19,4 @@ int main()
 	printf("Approximate sum: %.1f\n", sum);
 	return 0;
 }
+//fix

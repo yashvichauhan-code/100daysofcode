@@ -19,3 +19,4 @@ int main()
     printf("prime");
     return 0;
 }
+//fix

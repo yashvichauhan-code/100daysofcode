@@ -15,3 +15,4 @@ int main()
 	printf("Sum of digits of %d is %d\n", n, sum);
 	return 0;
 }
+//fix

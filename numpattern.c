@@ -15,3 +15,10 @@ int main()
     return 0;
 }
 //fixing github
+/*
+1
+12
+123
+1234
+12345
+*/

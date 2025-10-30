@@ -18,4 +18,4 @@ int main() {
 	}
 	printf("Sum of series up to %d terms = %.2f\n", n, sum);
 	return 0;
-}
+}//fix

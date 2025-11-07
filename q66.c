@@ -1,23 +1,46 @@
-//Insert an element in a sorted array at the appropriate position.
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int n;
-    printf("enter no. of elements: ");
+    printf("Enter number of elements: ");
     scanf("%d", &n);
-    int arr[n+1];
-    printf("enter %d elements: ", n);
-    for(int i=0; i<n; i++){
+
+    int arr[n + 1];  // extra space for new element
+    printf("Enter %d sorted elements: ", n);
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    /*int add;
-    printf("enter no. to be add: ");
-    scanf("%d", &add);*/
-        for(int i=0; i<n; i++){
-            arr[n]=arr[n+1];
-            arr[n-i+1]=arr[n-i];
+
+    int add;
+    printf("Enter number to insert: ");
+    if (scanf("%d", &add) != 1) {
+        printf("Invalid input!\n");
+        return 1;
+    }
+
+    int pos = n; // default to end position
+
+    // find position to insert
+    for (int i = 0; i < n; i++) {
+        if (add < arr[i]) {
+            pos = i;
+            break;
         }
-        for(int i=0; i<n; i++){
-            printf("%d", i);
-        }
+    }
+
+    // shift elements to the right
+    for (int i = n; i > pos; i--) {
+        arr[i] = arr[i - 1];
+    }
+
+    // insert new element
+    arr[pos] = add;
+
+    printf("Array after insertion: ");
+    for (int i = 0; i <= n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
     return 0;
 }
